@@ -16,5 +16,13 @@ font-size: 16px;
 }
 .save{
   height: 100px;
-  width:100px; 
+  width:100px;
+}
+.game{
+  background-image: url("../img/assets/background.png");
+  background-repeat: no-repeat;
+  padding-bottom: 30%;
+  background-position: center;
+  background-size: contain;
+  color: #FEF5E7;
 }
