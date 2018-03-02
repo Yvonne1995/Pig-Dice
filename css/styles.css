@@ -1,28 +1,36 @@
-body{
+body {
   background-color: #FEF5E7;
 }
-.start{
+
+.start {
   height: 1000px;
-  width:100%;
+  width: 100%;
 }
 
-.button{
-border-radius: 50%;
-background-color: orange;
-color: white;
-padding: 20px;
-text-align: center;
-font-size: 16px;
+.button {
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
 }
-.save{
+
+.save {
   height: 100px;
-  width:100px;
+  width: 100px;
 }
-.game{
+
+.game {
   background-image: url("../img/assets/background.png");
   background-repeat: no-repeat;
   padding-bottom: 30%;
   background-position: center;
   background-size: contain;
   color: #FEF5E7;
+  display: none;
+}
+
+.section1 {
+  display: none;
 }
