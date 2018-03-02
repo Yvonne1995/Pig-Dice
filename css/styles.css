@@ -1,7 +1,20 @@
 body{
-  background-color: #FEF5E7;  
+  background-color: #FEF5E7;
 }
 .start{
   height: 1000px;
   width:100%;
+}
+
+.button{
+border-radius: 50%;
+background-color: orange;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 16px;
+}
+.save{
+  height: 100px;
+  width:100px; 
 }
