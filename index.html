@@ -14,49 +14,54 @@
   <div class="container-fluid">
 
     <!--landing page -->
-    <a href="#"><img class="start" src="img/assets/landing.png" alt="logo"></a>
+    <a href="#detail"><img class="start" src="img/assets/landing.png" alt="logo"></a>
   </div>
   <br>
   <br>
   <!--landiing page  -->
 
   <!--input details section  -->
-  <div class="section1">
+  <div id="detail" class="section1">
     <section>
       <center>
         <div class="container header header1">
           <h1>So You Want To Play The Pig!!</h1>
-          <form>
-            <div>
-              <label for="player1Name"><h2>Player 1 Name</h2></label>
+          <form id="player-details">
+            <div class="player">
+              <label for="player1"><h2>Player 1 Name</h2></label>
               <input id="player1" required class="player1Name form-control" type="text">
             </div>
-          </form>
-          <form>
-            <div>
-              <label for="player2Name"><h2>Player 2 Name</h2></label>
+            <div class="player">
+              <label for="player2"><h2>Player 2 Name</h2></label>
               <input id="player2" required class="player2Name form-control" type="text">
             </div>
-          </form><br>
-          <a href="#"><img class="save" src="img/assets/save.png" alt="logo"></a>
-          <center>
+            <br>
+                      <a href="#nose"><img class="save" type="submit" src="img/assets/save.png" alt="logo"></a>
+          </form>
         </div>
+        <center>
     </section>
   </div>
   <!-- input details section -->
 
 
   <!--now for the game  -->
-  <div class="game">
     <section>
-      <center>
+    <div id="nose"class="game">
 
-        <center>
-  </div>
   </section>
   <!--end of game  -->
 
-
+<!-- footer -->
+<!-- <section> -->
+  <div class="foot">
+    <center>
+    <p>By Yvonne Kagondu</p>
+    <center>
+  </div>
+</section>
+</div>
+<!-- footer -->
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
 </body>

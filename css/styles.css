@@ -1,5 +1,5 @@
 body {
-  background-color: #FEF5E7;
+  background-color: #FBEEE6;
 }
 
 .start {
@@ -21,16 +21,20 @@ body {
   width: 100px;
 }
 
-.game {
-  background-image: url("../img/assets/background.png");
-  background-repeat: no-repeat;
+/*.game {
+  background-image: url("../img/assets/backg.png");
   padding-bottom: 30%;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  color: #FEF5E7;
+  color: #FBEEE6;
   display: none;
-}
+}*/
 
 .section1 {
   display: none;
+}
+.foot{
+  background-color: #F5B7B1;
+  padding: 50px;
 }
