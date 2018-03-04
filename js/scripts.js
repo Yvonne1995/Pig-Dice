@@ -47,9 +47,25 @@ $(document).ready(function() {
     var inputtedplayer2 = $("input#player2").val();
     var player1 = new Player(inputtedplayer1, 0);
     var player2 = new Player(inputtedplayer2, 0);
-    $("")
+    $("#plaayer1Display").text(playersArray[0].playerName).show();
+    showNamesAndScores();
+    $("form").hide();
+    $(".game").show();
+  });
 
-  })
+  $("#diceRoll").click(function(event) {
+    event.preventDefault();
+    $("#result").show();
+    $(".showTurnTotal").show();
+    var randomRoll = (1+ Math.floor(Math.random() * 6));
+    $("result").text(randomRoll);
+    if (randomRoll >= 2) {
+      turnRollArray.push(randomRoll);
+      $("#totaltotal").text(turnRollArray.sum());
+    }else {
+      rollOneChangePlayers();
+    }
+  });
 })
 // <h1 class="test">78</h1>
 // $(document).ready(function() {
