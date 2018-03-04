@@ -21,6 +21,11 @@ body {
   width: 100px;
 }
 
+.next {
+  height: 100px;
+  width: 100px;
+}
+
 /*.game {
   background-image: url("../img/assets/backg.png");
   padding-bottom: 30%;
@@ -37,4 +42,12 @@ body {
 .foot{
   background-color: #F5B7B1;
   padding: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.rules{
+  display: none;
 }

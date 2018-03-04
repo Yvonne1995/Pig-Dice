@@ -1,6 +1,13 @@
 $(document).ready(function() {
   $(".start").click(function() {
 
+    $(".rules").toggle();
+  });
+});
+
+$(document).ready(function() {
+  $(".next").click(function() {
+
     $(".section1").toggle();
 
   });
@@ -15,8 +22,8 @@ $(document).ready(function() {
 
 // business logic
 function Player(player1, player2) {
-  this.Player1=player1;
-  this.Player2=player2;
+  this.Player1 = player1;
+  this.Player2 = player2;
 }
 
 // user interface logic
@@ -24,10 +31,10 @@ $(document).ready(function() {
   $("form#player-details").submit(function(event) {
     event.preventDefault();
 
-    var inputtedplayer1= $("input#player1").val();
-    var inputtedplayer2= $("input#player2").val();
+    var inputtedplayer1 = $("input#player1").val();
+    var inputtedplayer2 = $("input#player2").val();
 
-    var newPlayers = new Player(inputtedPlayer1,inputtedPlayer2);
+    var newPlayers = new Player(inputtedPlayer1, inputtedPlayer2);
 
   })
 })

@@ -20,6 +20,24 @@
   <br>
   <!--landiing page  -->
 
+  <div class="rules">
+<section>
+  <center>
+    <h1>Game Rules</h1>
+    <h4>First Player to 100 pts wins!</h4>
+<ul>
+  <li>Player 1 goes first</li>
+  <li>Click the "Roll" button to roll a virtual 6-sided die</li>
+  <li>Values for 2-6 get added to the "Roll Total" value for each turn</li>
+  <li>If you roll a 1, your turn is over and you lose all points earned</li>
+  <li>To end turn, select " Hold" button- this will add the "Roll Total" to the player's score</li>
+  <li>Have fun! :D</li>
+</ul>
+<a href="#nose"><img class="next" src="img/assets/save.png" alt="logo"></a>
+  </center>
+</section>
+</div>
+
   <!--input details section  -->
   <div id="detail" class="section1">
     <section>
@@ -36,7 +54,7 @@
               <input id="player2" required class="player2Name form-control" type="text">
             </div>
             <br>
-                      <a href="#nose"><img class="save" type="submit" src="img/assets/save.png" alt="logo"></a>
+            <a href="#nose"><img class="save" type="submit" src="img/assets/save.png" alt="logo"></a>
           </form>
         </div>
         <center>
@@ -46,22 +64,31 @@
 
 
   <!--now for the game  -->
-    <section>
-    <div id="nose"class="game">
-
+  <section>
+    <div id="nose" class="game">
+      <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+<h3><span id="player1Name"></span>Score:<span id="player1TotalScore"></span></h3>
+</div>
+      <div class="col-md-5">
+<h3><span id="player2Name"></span>Score:<span id="player2TotalScore"></span></h3>
+</div>
+<div class="col-md-1"></div>
+</div>
   </section>
   <!--end of game  -->
 
-<!-- footer -->
-<!-- <section> -->
+  <!-- footer -->
+  <!-- <section> -->
   <div class="foot">
     <center>
-    <p>By Yvonne Kagondu</p>
-    <center>
-  </div>
-</section>
+      <p>By Yvonne Kagondu</p>
+      <center>
+
+  </section>
 </div>
-<!-- footer -->
+  <!-- footer -->
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
 </body>
