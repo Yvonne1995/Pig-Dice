@@ -66,13 +66,31 @@ $(document).ready(function() {
       rollOneChangePlayers();
     }
   });
+
+  // winner
+  $("#hold").click(function(event) {
+    changePlayers();
+    if(playersArray[0].score >= 100){
+      alert(playersArray[0].playerName + "wins!!");
+      document.location.reload(true);
+    }else if (playersArray[1].score >= 100) {
+      alert(playersArray[1].playerName + "wins!!")
+      document.location.reload(true);
+    }
+  });
+
+// fxns
+  function showNamesAndScores() {
+    $("#player1Name").text(playersArray[0].playerName);
+    $("#player2Name").text(playersArray[1].playerName);
+    $("player1TotalScore").text(playersArray[0].score);
+    $("player2TotalScore").text(playersArray[1].score);
+  }
 })
-// <h1 class="test">78</h1>
-// $(document).ready(function() {
-//   var v = $('.test')
-//   var x = parseInt(v.text()) + 1;
-//   v.text(x)
-//   console.log(x)
-//
-//
-// });
+
+function rollOneChangePlayers() {
+  if ($("player1Display").is(":visible")) {
+    turnRollArray = [0];
+    $("")
+  }
+}
