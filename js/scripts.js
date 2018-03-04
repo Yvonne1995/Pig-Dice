@@ -17,13 +17,25 @@ $(document).ready(function() {
   $(".save").click(function() {
 
     $(".game").toggle();
+    $(".Dice").toggle();
+    $(".res").toggle();
   });
 });
 
 // business logic
-function Player(player1, player2) {
-  this.Player1 = player1;
-  this.Player2 = player2;
+
+var playersArray = []
+var turnRollArray = []
+
+function Player(playerName, score) {
+  this.playerName = playerName;
+  this.score = score;
+  playersArray.push(this);
+}
+
+Array.prototype.sum= function() {
+  return this.reduce(function(a,b) { return a + b
+  });
 }
 
 // user interface logic
@@ -33,8 +45,9 @@ $(document).ready(function() {
 
     var inputtedplayer1 = $("input#player1").val();
     var inputtedplayer2 = $("input#player2").val();
-
-    var newPlayers = new Player(inputtedPlayer1, inputtedPlayer2);
+    var player1 = new Player(inputtedplayer1, 0);
+    var player2 = new Player(inputtedplayer2, 0);
+    $("")
 
   })
 })
