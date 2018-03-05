@@ -46,6 +46,9 @@ ul {
   display: none;
 }
 
+.game {
+  display: none;
+}
 
 #diceRoll {
   border-radius: 50%;
@@ -73,6 +76,11 @@ ul {
   display: none;
 }
 
-.nose{
-  border: 2px solid black;
+#nose{
+  border: 2px solid #F5B7B1;
+  text-align: center;
+}
+
+#totaltotal{
+  font-size: 2em;
 }

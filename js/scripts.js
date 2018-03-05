@@ -13,6 +13,14 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $("#saveForm").click(function() {
+
+    $(".game").toggle();
+
+  });
+});
+
 
 // business logic
 
@@ -109,7 +117,7 @@ function rollOneChangePlayers() {
 function changePlayers() {
   if ($("#player1Display").is(":visible")) {
     playersArray[0].score = (playersArray[0].score += turnRollArray.sum());
-    alert("Congrats bruh!" + " You got" + turnRollArray.sum() + " points!");
+    alert("Congrats bruh!" + " You got " + turnRollArray.sum() + " points!");
     turnRollArray = [0];
     $("#totaltotal").text(turnRollArray)
     $("#player1Display").hide();
@@ -117,7 +125,7 @@ function changePlayers() {
     console.log(playersArray[0].score);
     showNamesAndScores();
   } else {
-    alert("Congrats bruh!" + " You got" + turnRollArray.sum() + " points!");
+    alert("Congrats bruh!" + " You got " + turnRollArray.sum() + " points!");
     playersArray[1].score = (playersArray[1].score += turnRollArray.sum());
     turnRollArray = [0];
     $("#totaltotal").text(turnRollArray)
