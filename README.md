@@ -11,7 +11,7 @@ If a player chooses to "hold", their turn total is added to their score, and it 
 The first player to score 100 or more points wins.
 
 # Getting Started
-Follow the following link:
+Follow the following link: https://github.com/Yvonne1995/Pig-Dice.git
 
 # Acknowledgments
 Moringa School
