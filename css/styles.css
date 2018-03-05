@@ -1,7 +1,7 @@
 body {
   background-color: #FBEEE6;
   overflow-y: scroll;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .start {
@@ -18,7 +18,7 @@ body {
   font-size: 16px;
 }
 
-.save {
+#saveForm {
   height: 100px;
   width: 100px;
 }
@@ -28,15 +28,6 @@ body {
   width: 100px;
 }
 
-/*.game {
-  background-image: url("../img/assets/backg.png");
-  padding-bottom: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  color: #FBEEE6;
-  display: none;
-}*/
 
 .section1 {
   display: none;
@@ -55,17 +46,6 @@ ul {
   display: none;
 }
 
-.game{
-  display: none;
-}
-
-.Dice{
-  display: none;
-}
-
-.res{
-  display: none;
-}
 
 #diceRoll {
   border-radius: 50%;
@@ -83,4 +63,16 @@ ul {
   padding: 20px;
   text-align: center;
   font-size: 16px;
+}
+
+#player1Display {
+  display: none;
+}
+
+#player2Display {
+  display: none;
+}
+
+.nose{
+  border: 2px solid black;
 }

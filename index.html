@@ -21,105 +21,100 @@
   <!--landiing page  -->
 
   <div class="rules">
-<section>
-  <center>
-    <h1>Game Rules</h1>
-    <h4>First Player to 100 pts wins!</h4>
-<ul>
-  <li>Player 1 goes first</li>
-  <li>Click the "Roll" button to roll a virtual 6-sided die</li>
-  <li>Values for 2-6 get added to the "Roll Total" value for each turn</li>
-  <li>If you roll a 1, your turn is over and you lose all points earned</li>
-  <li>To end turn, select " Hold" button- this will add the "Roll Total" to the player's score</li>
-  <li>Have fun! :D</li>
-</ul>
-<a href="#nose"><img class="next" src="img/assets/save.png" alt="logo"></a>
-  </center>
-</section>
-</div>
+      <center>
+        <h1>Game Rules</h1>
+        <h4>First Player to 100 pts wins!</h4>
+        <ul>
+          <li>Player 1 goes first</li>
+          <li>Click the "Roll" button to roll a virtual 6-sided die</li>
+          <li>Values for 2-6 get added to the "Roll Total" value for each turn</li>
+          <li>If you roll a 1, your turn is over and you lose all points earned</li>
+          <li>To end turn, select "Hold" button- this will add the "Roll Total" to the player's score</li>
+          <li>Have fun! :D</li>
+        </ul>
+        <a href="#detail"><img class="next" src="img/assets/save.png" alt="logo"></a>
+      </center>
+  </div>
 
   <!--input details section  -->
   <div id="detail" class="section1">
-    <section>
       <center>
         <div class="container header header1">
           <h1>So You Want To Play The Pig!!</h1>
           <form id="player-details">
-            <div class="player">
+            <div class="form-group">
               <label for="player1"><h2>Player 1 Name</h2></label>
               <input id="player1" required class="player1Name form-control" type="text">
             </div>
-            <div class="player">
+            <div class="form-group">
               <label for="player2"><h2>Player 2 Name</h2></label>
               <input id="player2" required class="player2Name form-control" type="text">
             </div>
             <br>
-            <a href="#nose"><img class="save" type="submit" src="img/assets/save.png" alt="logo"></a>
+            <input type="image" src="img/assets/save.png" name="saveForm" class="btTxt submit" id="saveForm" />
           </form>
         </div>
         <center>
-    </section>
-  </div>
   <!-- input details section -->
 
 
   <!--game records -->
-  <section>
     <div class="game">
-    <div id="nose">
-      <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
-<h3><span id="player1Name"></span>Score:<span id="player1TotalScore"></span></h3>
-</div>
-      <div class="col-md-5">
-<h3><span id="player2Name"></span>Score:<span id="player2TotalScore"></span></h3>
-</div>
-<div class="col-md-1"></div>
-</div>
-</div>
-  </section>
-
+      <div id="nose">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <h3><span id="player1Name"></span> Score:<span id="player1TotalScore"></span></h3>
+          </div>
+          <div class="col-md-5">
+            <h3><span id="player2Name"></span> Score:<span id="player2TotalScore"></span></h3>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+  <!-- </section> -->
   <br>
   <!--game records-->
-<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-    <h3 id="player1Display"></h3>
-    <h3 id="player2Display"></h3>
-    <div class="col-md-1"></div>
-  </div>
-</div>
-<section>
-  <div id="dice" class="Dice">
   <div class="row">
-<div class="col-md-2"></div>
-  <div class="col-md-4">
-    <center>
-    <button type="submit" id="diceRoll">Roll</button>
-  </center>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <h3 id="player1Display"></h3>
+      <h3 id="player2Display"></h3></div>
+      <div class="col-md-1"></div>
   </div>
-  <div class="col-md-4">
-      <center>
-    <button type="submit" id="hold">Hold</button>
-      </center>
-  </div>
-  <div class="col-md-2"></div>
-</div>
+
+
+    <div id="dice">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <center>
+            <button type="submit" id="diceRoll">Roll</button>
+          </center>
+        </div>
+        <div class="col-md-4">
+          <center>
+            <button type="submit" id="hold">Hold</button>
+          </center>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
     </div>
 
     <!--results  -->
-    <div class="res">
       <div class="row">
         <center>
-      <h3><span id="result"></span></h3>
-      <h3>Total</h3>
-    <h3><span id="totaltotal"></span></h3>
-  </center>
-  </div>
-  </div>
-</section>
-</div>
+          <h3><span id="result"></span></h3>
+        </center>
+        </div>
+
+        <div class="row" id="playerTotal">
+          <h3>Total</h3>
+          <h3><span id="totaltotal"></span></h3>
+        </center>
+          </div>
+      </div>
+    </div>
 
 
   <!-- footer -->
@@ -128,10 +123,11 @@
       <p>By Yvonne Kagondu</p>
       <center>
 
-  </section>
-</div>
+        </section>
+  </div>
   <!-- footer -->
   <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
