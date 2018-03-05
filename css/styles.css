@@ -28,7 +28,6 @@ body {
   width: 100px;
 }
 
-
 .section1 {
   display: none;
 }
@@ -76,11 +75,11 @@ ul {
   display: none;
 }
 
-#nose{
+#nose {
   border: 2px solid #F5B7B1;
   text-align: center;
 }
 
-#totaltotal{
+#totaltotal {
   font-size: 2em;
 }
